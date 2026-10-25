@@ -33,6 +33,7 @@ jobs:
           test -f README.md
           test -f LICENSE
           test -f CONTRIBUTING.md
+          test -f SECURITY.md
           test -f .github/FUNDING.yml
           test -d claude
           test -d openai
@@ -41,33 +42,41 @@ jobs:
           test -d architecture-guides
           echo "All structural invariant checks passed successfully!"
 
-      - name: Verify Internal Markdown Links
+      - name: Verify All Internal Markdown Links
         run: |
           python - << 'EOF'
           import os, re, sys
 
           base_dir = "."
-          readme_path = os.path.join(base_dir, "README.md")
-          with open(readme_path, "r", encoding="utf-8") as f:
-              content = f.read()
-
-          links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', content)
           broken = []
           checked = 0
-          for text, url in links:
-              if url.startswith("http://") or url.startswith("https://") or url.startswith("#"):
-                  continue
-              checked += 1
-              clean_target = url.split("#")[0]
-              target = os.path.normpath(os.path.join(base_dir, clean_target))
-              if not os.path.exists(target):
-                  broken.append((text, url, target))
+
+          for root, dirs, files in os.walk(base_dir):
+              dirs[:] = [d for d in dirs if d != '.git' and d != 'node_modules']
+              for file in files:
+                  if not file.endswith('.md'):
+                      continue
+                  fpath = os.path.join(root, file)
+                  with open(fpath, "r", encoding="utf-8") as f:
+                      content = f.read()
+
+                  links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', content)
+                  for text, url in links:
+                      if url.startswith("http://") or url.startswith("https://") or url.startswith("#") or url.startswith("mailto:"):
+                          continue
+                      checked += 1
+                      clean_target = url.split("#")[0]
+                      if not clean_target:
+                          continue
+                      target = os.path.normpath(os.path.join(root, clean_target))
+                      if not os.path.exists(target):
+                          broken.append((fpath, text, url, target))
 
           if broken:
-              print(f"FAILED: Found {len(broken)} broken local links:")
-              for t, u, tgt in broken:
-                  print(f"  - [{t}]({u}) -> {tgt} does not exist!")
+              print(f"FAILED: Found {len(broken)} broken local links across repository:")
+              for src, t, u, tgt in broken:
+                  print(f"  In {src}: [{t}]({u}) -> {tgt} does not exist!")
               sys.exit(1)
           else:
-              print(f"PASSED: All {checked} local relative links verified successfully!")
+              print(f"PASSED: All {checked} local relative links verified successfully across all markdown files!")
           EOF

@@ -34,7 +34,11 @@
   - [4. DeepSeek & Open Weights Reasoning](#4-deepseek--open-weights-reasoning)
   - [5. Industrial Agent Architecture Guides](#5-industrial-agent-architecture-guides)
 - [How to Use These Prompts](#-how-to-use-these-prompts)
+- [Community Star Milestones & Roadmap](#-community-star-milestones--roadmap)
+- [Direct 1-Click Raw Access](#-direct-1-click-raw-access-clipboard-ready)
+- [Academic Technical Report & Citation](#-academic-technical-report--citation)
 - [Contributing](#-contributing)
+- [Security Policy](SECURITY.md)
 - [License & Disclaimer](#-license--disclaimer)
 
 ---
@@ -74,6 +78,7 @@ Modern AI development has shifted from simple conversational prompting to **auto
 | **Cursor Agent v2.0** | Coding Agent | Full workspace context injection, diff generation contracts, semantic grep | [`coding-agents/cursor-agent-v2.md`](coding-agents/cursor-agent-v2.md) |
 | **Cursor CLI Agent** | Coding Agent | Terminal-first execution rules, headless patch application, linter recovery | [`coding-agents/cursor-cli-prompt.md`](coding-agents/cursor-cli-prompt.md) |
 | **Windsurf Cascade** | Coding Agent | Codebase-wide multi-file orchestration, wave execution protocol, real-time sync | [`coding-agents/windsurf-cascade-prompt.md`](coding-agents/windsurf-cascade-prompt.md) |
+| **Aider Dual-Model** | Coding Agent | Decoupled Architect/Editor pipeline, Repo-Map AST injection, search/replace diffs | [`coding-agents/aider-architect-editor.md`](coding-agents/aider-architect-editor.md) |
 | **Devin AI** | Coding Agent | End-to-end autonomous software engineer runtime, shell execution loop | [`coding-agents/devin-ai-prompt.md`](coding-agents/devin-ai-prompt.md) |
 | **Cline (Claude Dev)** | Coding Agent | Autonomous VS Code extension prompt, browser automation, read-write tools | [`coding-agents/cline-dev-system.md`](coding-agents/cline-dev-system.md) |
 | **Roo-Code** | Coding Agent | Multi-mode autonomous developer prompt (Architect / Code / Ask) | [`coding-agents/roo-code-system.md`](coding-agents/roo-code-system.md) |
@@ -101,6 +106,7 @@ frontier-agent-prompts/
 │   ├── claude-artifacts-guidelines.md           # Interactive Artifacts UI engine rules
 │   └── claude-code-cli.md                       # Claude Code 2.0 autonomous CLI agent
 ├── coding-agents/
+│   ├── aider-architect-editor.md                # Aider decoupled Architect / Editor engine
 │   ├── cline-dev-system.md                      # Cline (Claude Dev) autonomous engine
 │   ├── cursor-agent-v2.md                       # Cursor Composer v2 core instructions
 │   ├── cursor-cli-prompt.md                     # Cursor CLI terminal agent
@@ -118,8 +124,12 @@ frontier-agent-prompts/
 │   ├── o3-reasoning-system.md                   # o3 series high-compute reasoning API prompt
 │   ├── openai-codex-plan-mode.md                # Codex Plan Mode architectural decomposition
 │   └── openai-deep-research.md                  # Deep Research multi-step search engine
+├── publications/
+│   ├── frontier_agent_prompts_technical_report.html # Monograph HTML source
+│   └── frontier_agent_prompts_technical_report.pdf  # Camera-ready technical report PDF
 ├── CONTRIBUTING.md                              # Open source contribution guide
 ├── LICENSE                                      # MIT License
+├── SECURITY.md                                  # Responsible disclosure & privacy policy
 └── README.md                                    # Master documentation & navigation hub
 ```
 
@@ -142,6 +152,7 @@ The heart of modern agentic engineering:
 - **Cursor Composer & CLI**: Optimized for diff generation, workspace-wide symbol awareness, and minimal token overhead.
 - **Windsurf Cascade**: Pioneered the concept of "Wave execution"—coordinated multi-file updates synchronized with LSP feedback.
 - **Cline & Roo-Code**: Open-source implementations demonstrating how to give LLMs full terminal, browser, and file system execution with human-in-the-loop safety switches.
+- **Aider**: Pioneered the dual-model Architect / Editor decoupled pipeline with tree-sitter AST Repo-Map injection and surgical search/replace unified diffs.
 - **Devin & Manus**: High-autonomy agent architectures that manage persistent shell environments, browser CDP sessions, and dynamic planning boards.
 
 ### 4. DeepSeek & Open Weights Reasoning
@@ -208,6 +219,30 @@ curl -fsSL https://raw.githubusercontent.com/donsk08/frontier-agent-prompts/main
 [![Star History Chart](https://api.star-history.com/svg?repos=donsk08/frontier-agent-prompts&type=Date)](https://star-history.com/#donsk08/frontier-agent-prompts&Date)
 
 </div>
+
+---
+
+## 📄 Academic Technical Report & Citation
+
+This repository accompanies our formal research monograph on the architecture, safety, and evaluation of autonomous coding agent prompts:
+
+- 📑 **Read Online HTML**: [`publications/frontier_agent_prompts_technical_report.html`](publications/frontier_agent_prompts_technical_report.html)
+- 📥 **Download Camera-Ready PDF**: [`publications/frontier_agent_prompts_technical_report.pdf`](publications/frontier_agent_prompts_technical_report.pdf)
+
+### BibTeX Citation
+If you use these prompts, architecture guides, or benchmarks in your research or commercial products, please cite:
+
+```bibtex
+@article{donsk2026frontierprompts,
+  title={Frontier Agent Prompts: The 7-Layer Compiled Kernel Model and State Machine Loop Protocols for Autonomous Coding Systems},
+  author={DONSK},
+  journal={Frontier AI Systems Lab Technical Report},
+  year={2026},
+  month={October},
+  note={ORCID: 0009-0004-2951-0263},
+  url={https://github.com/donsk08/frontier-agent-prompts}
+}
+```
 
 ---
 
