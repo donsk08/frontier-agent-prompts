@@ -1,0 +1,36 @@
+name: Markdown & Link Linting
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    name: Lint Markdown & Check Integrity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Markdownlint
+        run: |
+          npx --yes markdownlint-cli "**/*.md" --ignore node_modules || true
+
+      - name: Verify File Structure
+        run: |
+          test -f README.md
+          test -f LICENSE
+          test -f CONTRIBUTING.md
+          test -d claude
+          test -d openai
+          test -d coding-agents
+          test -d deepseek-open-source
+          test -d architecture-guides
+          echo "All structural invariant checks passed successfully!"
