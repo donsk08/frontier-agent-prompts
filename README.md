@@ -7,6 +7,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/donsk08/frontier-agent-prompts?style=for-the-badge&logo=github&color=gold)](https://github.com/donsk08/frontier-agent-prompts/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/donsk08/frontier-agent-prompts?style=for-the-badge&logo=github&color=blue)](https://github.com/donsk08/frontier-agent-prompts/network/members)
 [![CI](https://github.com/donsk08/frontier-agent-prompts/actions/workflows/lint.yml/badge.svg)](https://github.com/donsk08/frontier-agent-prompts/actions/workflows/lint.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23648712.svg)](https://doi.org/10.5281/zenodo.23648712)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/donsk08/frontier-agent-prompts)
@@ -227,6 +228,7 @@ curl -fsSL https://raw.githubusercontent.com/donsk08/frontier-agent-prompts/main
 
 This repository accompanies our formal research monograph on the architecture, safety, and evaluation of autonomous coding agent prompts:
 
+- 🏛️ **Zenodo Permanent Archive & DOI**: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23648712.svg)](https://doi.org/10.5281/zenodo.23648712) • [`10.5281/zenodo.23648712`](https://doi.org/10.5281/zenodo.23648712)
 - 📑 **Read Online HTML**: [`publications/frontier_agent_prompts_technical_report.html`](publications/frontier_agent_prompts_technical_report.html)
 - 📥 **Download Camera-Ready PDF**: [`publications/frontier_agent_prompts_technical_report.pdf`](publications/frontier_agent_prompts_technical_report.pdf)
 
@@ -240,8 +242,9 @@ If you use these prompts, architecture guides, or benchmarks in your research or
   journal={Frontier AI Systems Lab Technical Report},
   year={2026},
   month={October},
+  doi={10.5281/zenodo.23648712},
   note={ORCID: 0009-0004-2951-0263},
-  url={https://github.com/donsk08/frontier-agent-prompts}
+  url={https://doi.org/10.5281/zenodo.23648712}
 }
 ```
 
