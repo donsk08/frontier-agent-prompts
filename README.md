@@ -48,6 +48,14 @@ Modern AI development has shifted from simple conversational prompting to **auto
 
 **frontier-agent-prompts** is the definitive, curated archive documenting the real-world system prompts, hidden behavioral rules, and architecture blueprints powering the world's most capable AI systems.
 
+### ⭐ Why Star This Repository?
+
+- 🔄 **Continuous Tracking**: Frontier AI providers (Anthropic, OpenAI, Cognition) stealthily update their system instructions monthly. We track diffs, reverse-engineer changes, and catalog new releases within 24 hours.
+- 🛡️ **Production-Tested Architectures**: Stop reinventing prompt scaffolding. Copy battle-tested defensive constraints, anti-hallucination guardrails, and tool-invocation contracts directly into your own agents.
+- 🚀 **100% Free & Open-Source**: No paywalls, no gating. Everything is transparently documented in standardized Markdown for instant developer productivity.
+
+👉 **Hit the `Star` button in the upper-right corner to bookmark this knowledge base and receive updates on every breakthrough release!**
+
 ---
 
 ## 🧭 Prompt Taxonomy & Quick Navigation
@@ -158,6 +166,35 @@ To use any of these system instructions in your own LangChain, LlamaIndex, AutoG
 ```bash
 # Example: Running DeepSeek-R1 reasoning template with Ollama
 ollama run deepseek-r1:32b "$(cat deepseek-open-source/deepseek-r1-system.md)"
+```
+
+---
+
+## 🌟 Community Star Milestones & Roadmap
+
+We unlock new reverse-engineered architectures and open-source tooling at each community milestone:
+
+- [x] ⭐️ **1 Star (Genesis)**: Official release cataloging Claude Code, Claude 3.7, GPT-4o, Cursor, Devin & DeepSeek-R1.
+- [ ] ⭐️ **100 Stars**: Add **DeepSeek-V3** full multi-tool calling specification & function calling benchmarks.
+- [ ] ⭐️ **250 Stars**: Add **Grok-3 / Grok-2** system prompts and reasoning trace decompilations.
+- [ ] ⭐️ **500 Stars**: Launch **1-Click CLI Utility** (`npx frontier-prompts add <agent>`) to inject prompts directly into projects.
+- [ ] ⭐️ **1,000 Stars**: Release the **Automated Agent Prompt Injection & Jailbreak Defense Benchmark**.
+
+---
+
+## ⚡ Direct 1-Click Raw Access (Clipboard Ready)
+
+Need a prompt immediately in your terminal or editor? Pipe raw prompts directly to your clipboard or project:
+
+```bash
+# Claude Code 2.0 CLI Production Prompt
+curl -fsSL https://raw.githubusercontent.com/donsk08/frontier-agent-prompts/main/claude/claude-code-cli.md
+
+# Cursor Composer v2.0 System Prompt
+curl -fsSL https://raw.githubusercontent.com/donsk08/frontier-agent-prompts/main/coding-agents/cursor-agent-v2.md
+
+# DeepSeek-R1 Reasoning & Chain-of-Thought Guardrails
+curl -fsSL https://raw.githubusercontent.com/donsk08/frontier-agent-prompts/main/deepseek-open-source/deepseek-r1-system.md
 ```
 
 ---
