@@ -6,6 +6,7 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/donsk08/frontier-agent-prompts?style=for-the-badge&logo=github&color=gold)](https://github.com/donsk08/frontier-agent-prompts/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/donsk08/frontier-agent-prompts?style=for-the-badge&logo=github&color=blue)](https://github.com/donsk08/frontier-agent-prompts/network/members)
+[![CI](https://github.com/donsk08/frontier-agent-prompts/actions/workflows/lint.yml/badge.svg)](https://github.com/donsk08/frontier-agent-prompts/actions/workflows/lint.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/donsk08/frontier-agent-prompts)
@@ -77,6 +78,7 @@ Modern AI development has shifted from simple conversational prompting to **auto
 | **Cline (Claude Dev)** | Coding Agent | Autonomous VS Code extension prompt, browser automation, read-write tools | [`coding-agents/cline-dev-system.md`](coding-agents/cline-dev-system.md) |
 | **Roo-Code** | Coding Agent | Multi-mode autonomous developer prompt (Architect / Code / Ask) | [`coding-agents/roo-code-system.md`](coding-agents/roo-code-system.md) |
 | **Manus Agent Loop** | Coding Agent | General-purpose autonomous browser and shell execution state machine | [`coding-agents/manus-agent-loop-prompt.md`](coding-agents/manus-agent-loop-prompt.md) |
+| **Manus Agent Modules** | Coding Agent | Modular capability definitions, tool execution contracts, and sandbox APIs | [`coding-agents/manus-agent-modules.md`](coding-agents/manus-agent-modules.md) |
 | **DeepSeek-R1** | Open Weights | Large-scale RL reasoning framework, `<think>` boundary isolation, proof engine | [`deepseek-open-source/deepseek-r1-system.md`](deepseek-open-source/deepseek-r1-system.md) |
 | **DeepSeek-V3** | Open Weights | Mixture-of-Experts architecture prompt, high-throughput code synthesis | [`deepseek-open-source/deepseek-v3-system.md`](deepseek-open-source/deepseek-v3-system.md) |
 | **Industrial Prompt Architecture** | Whitepaper | 7-layer compiled execution kernel blueprint, anti-injection gates | [`architecture-guides/industrial-agent-prompt-architecture.md`](architecture-guides/industrial-agent-prompt-architecture.md) |
@@ -196,6 +198,16 @@ curl -fsSL https://raw.githubusercontent.com/donsk08/frontier-agent-prompts/main
 # DeepSeek-R1 Reasoning & Chain-of-Thought Guardrails
 curl -fsSL https://raw.githubusercontent.com/donsk08/frontier-agent-prompts/main/deepseek-open-source/deepseek-r1-system.md
 ```
+
+---
+
+## ⭐ Star History
+
+<div align="center">
+
+[![Star History Chart](https://api.star-history.com/svg?repos=donsk08/frontier-agent-prompts&type=Date)](https://star-history.com/#donsk08/frontier-agent-prompts&Date)
+
+</div>
 
 ---
 

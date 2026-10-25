@@ -2,9 +2,9 @@ name: Markdown & Link Linting
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, "00" ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, "00" ]
 
 jobs:
   lint:
@@ -19,6 +19,11 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
       - name: Run Markdownlint
         run: |
           npx --yes markdownlint-cli "**/*.md" --ignore node_modules || true
@@ -28,9 +33,41 @@ jobs:
           test -f README.md
           test -f LICENSE
           test -f CONTRIBUTING.md
+          test -f .github/FUNDING.yml
           test -d claude
           test -d openai
           test -d coding-agents
           test -d deepseek-open-source
           test -d architecture-guides
           echo "All structural invariant checks passed successfully!"
+
+      - name: Verify Internal Markdown Links
+        run: |
+          python - << 'EOF'
+          import os, re, sys
+
+          base_dir = "."
+          readme_path = os.path.join(base_dir, "README.md")
+          with open(readme_path, "r", encoding="utf-8") as f:
+              content = f.read()
+
+          links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', content)
+          broken = []
+          checked = 0
+          for text, url in links:
+              if url.startswith("http://") or url.startswith("https://") or url.startswith("#"):
+                  continue
+              checked += 1
+              clean_target = url.split("#")[0]
+              target = os.path.normpath(os.path.join(base_dir, clean_target))
+              if not os.path.exists(target):
+                  broken.append((text, url, target))
+
+          if broken:
+              print(f"FAILED: Found {len(broken)} broken local links:")
+              for t, u, tgt in broken:
+                  print(f"  - [{t}]({u}) -> {tgt} does not exist!")
+              sys.exit(1)
+          else:
+              print(f"PASSED: All {checked} local relative links verified successfully!")
+          EOF
