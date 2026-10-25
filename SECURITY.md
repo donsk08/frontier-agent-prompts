@@ -58,6 +58,9 @@ If you discover:
 
 ---
 
-## ⚖️ Academic & Defensive AI Safety Research Disclaimer
+## ⚖️ Academic Research, Defensive Safety & Notice-and-Takedown Policy
 
-All artifacts, prompt instructions, and architecture patterns contained in this repository are published strictly for defensive engineering, prompt evaluation benchmarking, alignment research, and educational purposes under Fair Use principles. Maintainers do not endorse unauthorized bypass of third-party terms of service.
+All artifacts, prompt instructions, and architecture patterns contained in this repository are published strictly for defensive engineering, prompt evaluation benchmarking, alignment research, and educational purposes under Fair Use principles (17 U.S.C. § 107) and DMCA § 1201 Good-Faith Security Research Exemptions.
+
+### Takedown & Redaction Requests
+Maintainers do not endorse unauthorized bypass of third-party terms of service, nor do we host executable exploits. If any intellectual property owner or organization identifies material that requires redaction, anonymization, or removal, please submit a request via [GitHub Private Vulnerability Reporting](https://github.com/donsk08/frontier-agent-prompts/security/advisories) or contact maintainer [@donsk08](https://github.com/donsk08). We commit to resolving all verified requests within 24–48 hours.

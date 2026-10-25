@@ -257,10 +257,32 @@ Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for details on:
 
 ---
 
-## 📜 License & Disclaimer
+## ⚖️ Legal, Ethics & Fair-Use Disclaimer
 
-- **Code & Original Documentation**: Released under the [MIT License](LICENSE).
-- **System Prompts & Reference Material**: Collected for research, educational, and safety auditing purposes under Fair Use. All trademarks, service marks, and brand names belong to their respective owners (Anthropic, OpenAI, Cursor, Windsurf, Cognition AI, DeepSeek, etc.).
+### 1. Academic Research & Fair Use Doctrine (17 U.S.C. § 107)
+The system prompts, reverse-engineered architectures, and behavioral protocols cataloged in this repository are published strictly for **scholarly research, educational analysis, interoperability assessment, and defensive AI safety auditing** under the principles of **Fair Use** (Title 17, United States Code, Section 107), the European Union Information Society Directive (2001/29/EC Art. 5(3)(a)), and equivalent international statutory research exceptions.
+- **Transformative Scholarship**: This repository does not redistribute proprietary model binaries or API access. Rather, it synthesizes raw prompt phenomena into novel academic formalisms (e.g., our formal *7-Layer Compiled Kernel Model* and *Idempotent State Machine Protocols*), providing empirical failure-mode taxonomy, sycophancy mitigation metrics, and defensive engineering baselines.
+- **Non-Copyrightability of Utilitarian Functional Matter**: In accordance with 17 U.S.C. § 102(b), the Merger Doctrine (*Baker v. Selden*), and *Google LLC v. Oracle America, Inc.* (2021), functional interface specifications, tool execution schemas, and operational instructions governing machine behavior represent functional methods of operation rather than protectable expressive works.
+
+### 2. Nominative Fair Use & Trademark Attribution
+All product names, logos, brands, service marks, and registered trademarks cited in this repository (including but not limited to **Anthropic, Claude, OpenAI, ChatGPT, GPT-4o, Cursor, Anysphere, Windsurf, Codeium, Devin, Cognition AI, DeepSeek**) are the intellectual property of their respective owners.
+- Their citation within this repository is strictly for **identification and nominative commentary** under the Nominative Fair Use doctrine (*New Kids on the Block v. News America Publishing, Inc.*, 9th Cir. 1992).
+- This repository is an independent open-source research initiative. It is **not affiliated with, endorsed by, sponsored by, or in any way officially associated with** Anthropic, OpenAI, Cursor / Anysphere, Codeium, Cognition AI, DeepSeek, or any of their affiliates or subsidiaries.
+
+### 3. Terms of Service & Benign Research Boundaries
+All prompt telemetry and behavioral data documented herein have been compiled from publicly accessible documentation, benign user interactions, and standard client telemetry for legitimate safety interpretability research. We do not distribute private access keys, bypass paywalled authentication gates, or access protected computer systems without authorization (*Van Buren v. United States*, 2021; DMCA § 1201 Good-Faith Security Research Exemptions).
+
+### 4. Notice and Takedown Policy (DMCA Safe Harbor Protocol)
+We respect intellectual property rights and maintain a cooperative, good-faith relationship with AI researchers and developers worldwide. If you are a copyright or trademark owner (or an authorized agent) and believe that any content in this repository exceeds fair-use research boundaries or contains proprietary trade secrets:
+- Please submit a notice via [GitHub Private Vulnerability Reporting](https://github.com/donsk08/frontier-agent-prompts/security/advisories) or contact maintainer [@donsk08](https://github.com/donsk08).
+- We maintain a **24–48 hour remediation SLA** and will expeditiously review, redact, contextualize, or remove contested material in good faith.
+
+---
+
+## 📜 License
+
+- **Source Code, Architecture Guides & Original Technical Reports**: Distributed under the permissive [MIT License](LICENSE). &copy; 2026 DONSK.
+- **Third-Party Prompts & Reference Instructions**: Documented strictly under Fair Use for scholarship, safety evaluation, and comparative benchmarking.
 
 ---
 
