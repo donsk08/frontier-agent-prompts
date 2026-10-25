@@ -39,7 +39,8 @@
 - [Academic Technical Report & Citation](#-academic-technical-report--citation)
 - [Contributing](#-contributing)
 - [Security Policy](SECURITY.md)
-- [License & Disclaimer](#-license--disclaimer)
+- [Legal, Ethics & Fair-Use Disclaimer](#-legal-ethics--fair-use-disclaimer)
+- [License](#-license)
 
 ---
 
